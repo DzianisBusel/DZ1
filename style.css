@@ -97,14 +97,14 @@ select {
     margin-bottom: 30px;
 }
 
-.books-list {
+.frameworks-list {
     /* Стили для нумерованного списка во второй секции */
     list-style-image: url(assets/images/Marker-books.svg);
     padding-left: 20px;
     font-size: 13px;
 }
 
-.movies-list {
+.books-list {
     list-style-type: decimal;
     padding-left: 20px;
     margin-bottom: 10px;
