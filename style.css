@@ -26,11 +26,9 @@ header {
 
 header span {
     /* Стили для текста в хедере IT-INCUBATOR */
-    color: #fff;
-    font-weight: 700;
     font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0;
+    font-weight: 700;    
+    color: #fff;
 }
 
 .main-section {
