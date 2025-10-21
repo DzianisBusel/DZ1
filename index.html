@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It-incubator precourse</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- ЗАДАНИЕ -->
     <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
-    <header>
-        <span>IT-INCUBATOR</span>
+    <header class="header">
+        <span class="header span">IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
+    <section class="main-section" data-cy="hw1-section-main-pre">
 
         <!-- 1) В этом разделе создай 3 дочерних элемента: -->
         <!-- a) Заголовок первого уровня со своим ФИО -->
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
         <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
     
-        <h1>Бусел Денис Васильевич</h1>
+        <h1 class="main-title">Бусел Денис Васильевич</h1>
 
-        <p>Я изучаю фронтенд разработку... Работаю на работе... Увлекаюсь JS... Что ещё рассказать хз... Сижу на стуле и думаю что ещё сюда написать чтоб набрать 50 символов... Надеюсь что уже набрал... Сча проверю... Такс, всего 30 символов... Получается надо добавлять ещё текст... Вот вроде добавлен, сча ещё проверю... Хм, 44 символа... Ну наверное с учётом, что я ещё пишу и это, то уже достаточно))</p>
+        <p class="main-text">Я изучаю фронтенд разработку... Работаю на работе... Увлекаюсь JS... Что ещё рассказать хз... Сижу на стуле и думаю что ещё сюда написать чтоб набрать 50 символов... Надеюсь что уже набрал... Сча проверю... Такс, всего 30 символов... Получается надо добавлять ещё текст... Вот вроде добавлен, сча ещё проверю... Хм, 44 символа... Ну наверное с учётом, что я ещё пишу и это, то уже достаточно))</p>
         
-        <img src="./assets/images/Какая-то картинка из интернета.png" alt="картинка чёт большая слишком">
+        <img class="main-image" src="./assets/images/Какая-то картинка из интернета.jpg" alt="картинка чёт большая слишком">
     
     </section>
 
-    <section data-cy="hw1-section-about-pre">
+    <section class="about-section" data-cy="hw1-section-about-pre">
 
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
                 
-        <label for="cities">Выберите город:</label>
+        <label for="cities"></label>
 
-        <select name="cities" id="cities">
+        <select class="select" name="cities" id="cities">
             <option value="mogilev">Могилёв</option>
             <option value="minsk" selected>Минск</option>
             <option value="gomel">Гомель</option>
@@ -45,8 +50,8 @@
             <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
             <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
              
-             <h2>Любимые книги</h2>
-            <ul>
+             <h2 class="section-title">Любимые книги</h2>
+            <ul class="books-list">
                 <li>Первая</li>
                 <li>Синяя</li>
                 <li>Вторая</li>
@@ -58,31 +63,31 @@
             <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
 
-             <h2>Любимые фильмы</h2>
-            <ol>
+             <h2 class="section-title">Любимые фильмы</h2>
+            <ol class="movies-list">
                 <li>Не страшный</li>
                 <li>Интерстеллар</li>
                 <li>Про кота</li>
             </ol>
         </div>
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
+            <h2 class="section-title">Мои скиллы</h2>
 
             <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
 
-                <label>
+                <label class="label">
                 <input type="checkbox" checked> HTML
             </label>
-            <label>
+            <label class="label">
                 <input type="checkbox" > CSS
             </label>
-            <label>
+            <label class="label">
                 <input type="checkbox" checked> Java
             </label>
-            <label>
+            <label class="label">
                 <input type="checkbox"> JS
             </label>
             
@@ -92,17 +97,17 @@
         <!-- 6) Создай здесь кнопку “Добавить” -->
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
           
-        <input type="text" placeholder="Новый скилл">
-          <button>Добавить</button>
-          <hr>
+        <input type="text" placeholder="Новый скилл"  class="text-field">
+          <button class="btn">Добавить</button>
+          <hr class="line">
         
-        <table data-cy="hw-about-table-pre" border="1">
+        <table data-cy="hw-about-table-pre" border="1" class="table">
             
                         <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
-              <tr>
+              <tr class="th, td">
         <th>Имя</th>
         <th>Фамилия</th>
         <th>Город</th>
@@ -128,9 +133,9 @@
       </tr>
 </table>
     </section>
-    <footer data-cy="hw-footer-pre">
+    <footer data-cy="hw-footer-pre" class="footer">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
-         <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
+         <a href="https://it-incubator.io/" target="_blank" class="footer-link">it-incubator</a>
     </footer>
 </body>
 </html>
